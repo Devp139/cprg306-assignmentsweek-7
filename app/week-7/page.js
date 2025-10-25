@@ -13,7 +13,7 @@ export default function Page() {
     setItems((prevItems) => [...prevItems, newItem]);
   }
 
-  // sorted copy (never mutate state directly)
+  
   const sortedItems = [...items].sort((a, b) => {
     if (sortBy === "name") return a.name.localeCompare(b.name);
     if (sortBy === "category") return a.category.localeCompare(b.category);
